@@ -2,7 +2,8 @@
 <h1>Add your event</h1>
 <form action='/event_form' method="post">
     <label for="date">Date</label>
-    <input type="text" name="date" id="date">
+    <input type="date" name="date" id="date"
+    min=2021-01-01 max=2040-01-01>
 
     <label for="event_name">Event name</label>
     <input type="text" name="event_name" id="event_name">
@@ -15,6 +16,12 @@
 
     <label for="description">Description</label>
     <textarea name="description" rows="2" cols="30"></textarea>
+    <laber for="recuring">Is this a recuring event?</laber>
+    <select name="recuring" id="rec">
+        <option value="none">Click here</option>
+        <option [ngvalue]="true">This is a recuring event</option>
+        <option [ngvalue]="false">This not a recuring event</option>
+    </select>
 
     <input type="submit" value="add event">
 </form>

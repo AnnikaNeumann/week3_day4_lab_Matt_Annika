@@ -13,10 +13,9 @@
                                 </span>
                             </p>
         {% endif %}
+        <a href="delete/{{ loop.index - 1}}">&#10060;</a>
     </div>
     {% endfor %} 
-    <div>
-        <a href=/delete>Remove an event</a>
-        <a href=/event_form>Add a new event!!!</a>
-    </div>
+    
+    
     {% endblock %}

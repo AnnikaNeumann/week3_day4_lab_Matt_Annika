@@ -1,0 +1,22 @@
+body > header {
+    background-color: aquamarine;
+    margin: 0;
+    padding: 20px;
+}
+
+body > main {
+    background-color: rgb(92, 216, 129);
+}
+
+.events {
+    background-color: rgb(211, 151, 163);
+    padding: 5px;
+   
+    
+}
+
+#recuring {
+    background-color: rgb(43, 255, 167);
+    padding: 1px
+    
+}
