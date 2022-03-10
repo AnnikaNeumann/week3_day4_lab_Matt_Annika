@@ -25,7 +25,7 @@ def delete_page():
 @app.route('/delete/<index>')
 def delete_event(index):
     delete_selected(event_list[int(index)])
-    return render_template("delete.html", title="delete-page", events=event_list)
+    return render_template("index.html", title="delete-page", events=event_list)
 
 
 
