@@ -22,6 +22,9 @@ def add_task():
 def delete_page():
     return render_template("delete.html", title="delete-page", events=event_list)
 
+
+# this function gets the index of the item we want to delete and passes the item to delete_selected
+# in order to remove it from the list it then renders the home page back to the user
 @app.route('/delete/<index>')
 def delete_event(index):
     delete_selected(event_list[int(index)])

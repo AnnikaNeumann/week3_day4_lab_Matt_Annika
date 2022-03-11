@@ -13,7 +13,11 @@
                                 </span>
                             </p>
         {% endif %}
-        <a href="delete/{{ loop.index - 1}}">&#10060;</a>
+       <a href="delete/{{ loop.index - 1}}">&#10060;</a>   <!-- the loop.index starts at 1 and increases by one for each loop.
+                                                            here i use it to pass the position of the item in the event_list
+                                                            so the return is always -1 as the python list index starts at 0
+                                                            the link takes the user to /delete/index to pass the index as a variable
+                                                            to the correspponding controller function. -->
     </div>
     {% endfor %} 
     
