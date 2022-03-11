@@ -1,0 +1,29 @@
+body{
+    background-color: aliceblue;
+    background-image: url(./images/crowd_concert.jpeg);
+    height: fit-content;
+}
+
+h1{
+    text-align: center;
+}
+
+/* .event_form{
+    font-size: 14px;
+    color: white; */
+
+/* } */
+h1 >div >div >a {
+    color: white;
+}
+
+#recurring{
+    align-items: center;
+}
+
+
+
+
+
+
+
