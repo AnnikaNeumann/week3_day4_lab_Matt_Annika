@@ -1,13 +1,25 @@
 <html>
     <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <title>{{ title }} - Event Planner</title>
         <link rel="stylesheet" href="/static/style.css">
     </head>
     <body>
+<<<<<<< HEAD
         
         <ul>
             <li><a href="/events">Home</a></li>
         </ul>
         <hr> {% block content %} {% endblock %}
+=======
+        <header>
+            <ul>
+                <li><a href="/events">Home</a></li>
+            </ul>
+        </header>
+        <main>
+            <hr> {% block content %} {% endblock %}
+        </main>
+>>>>>>> refs/remotes/origin/main
     </body>
 </html>
